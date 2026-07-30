@@ -38,10 +38,98 @@
             width: 35px;
             height: 35px;
             background: #4A90E2;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 18px;
+        }
+        .logo {
+            text-align: center;
+            flex: 1;
+        }
+        .logo img {
+            height: 40px;
+        }
+        .logo-tex {
+            font-size: 10px;
+            color: #666;
+            letter-spacing: 1px;
+        }
+        .cotent {
+            flex: 1;
+            text-align: center;
+        }
+        .title {
+            font-size: 28px;
+            font-weight: 700;
+            color: #4A90E2;
+            line-height: 1.2;
+            margin-bottom: 8px;
+        }
+        .subtitle {
+            font-size: 14px;
+            color: #888;
+            margin-bottom: 25px;
+        }
+        .car-img {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .bnt {
+            width: 80%;
+            padding: 12px;
+            border-radius: 8px;
+            border: none;
+            font-size: 15px;
+            font-weight: 600;
+            margin: 8px auto;
+            display: block;
+            cursor: pointer;
+        }
+        .bnt-primary {
+            background: #4A90E2;
+            color: white;
+        }
+        .bnt-outline {
+            background: transparent;
+            color: #555;
+            border: 2px solid #4A90E2;
+        }
+        .footer-nav {
+            display: flex;
+            justify-content: space-around;
+            border-top: 1px solid #eee;
+            padding-top: 12px;
+            margin-top: 10px;
+        }
+        .nav-item {
+            color: #4A90E2;
+        }
+        .nav-icon {
+            font-size: 20px;
+            margin-bottom: 4px;
         }
     </style>
 </head>
 <body>
-    
+                <div class="phone"> 
+                    <div class="header"> 
+                        <div class="menu-icon">☰</div> 
+                        <div class="logo"> 
+                            <div style="font-size:28px; font-weight:800; color:#2C3E50;">otto</div> 
+                            <div class="logo-text">acessórios</div> </div> <div style="width:35px;"></div> 
+                        </div> 
+                        <div class="content"> 
+                            <h1 class="title">Bem-vindo<br>ao Otto</h1> 
+                            <p class="subtitle">Acessórios de pesas para<br>carro</p> 
+                            <img src="https://via.placeholder.com/300x180/4A90E2/FFFFFF?text=Carro+Azul" alt="Carro" class="car-img"> 
+                            <img src="https://via.placeholder.com/300x80/CCCCFF/333?text=Peças+de+Carro" alt="Peças" class="car-img" style="margin-top:-20px;"> 
+                            <button class="btn btn-primary">ver produtos</button>
+                             <button class="btn btn-outline">saber mais</button> 
+                            </div> 
+                            <div class="footer-nav"> 
+
 </body>
 </html>
