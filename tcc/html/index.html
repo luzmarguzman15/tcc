@@ -1,310 +1,118 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>otto Acessorios</title>
-    <style>
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-body {
-    background: #ffffff;
-    color: #333;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-
-
-
-.navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 15px 15px;
-    position: relative;
-    background-color: #ffffff;
-    height: 150px;
-}
-
-.menu-icon {
-    color: #3b4cca;
-    cursor: pointer;
-}
-
-.logo img {
-    height: 150px;
-    object-fit: contain;
-}
-
-.desktop-menu {
-    display: none; 
-}
-
-
-.container {
-    flex: 1;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: radial-gradient(circle at bottom, #cadcff 0%, #ffffff 70%);
-    margin-bottom: 70px; 
-}
-
-.hero-content {
-    text-align: left;
-    width: 100%;
-    max-width: 400px;
-}
-
-.text-side h1 {
-    color: #5142a5;
-    font-size: 2rem;
-    font-weight: 800;
-    line-height: 1.2;
-    margin-bottom: 10px;
-}
-
-.text-side p {
-    color: #555;
-    font-size: 1rem;
-    margin-bottom: 20px;
-}
-
-.image-side {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin: 15px 0;
-}
-
-.main-img {
-    width: 100%;
-    max-width: 350px;
-    height: auto;
-}
-
-/* Botões */
-.action-buttons {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    width: 100%;
-    max-width: 280px;
-    margin-top: auto;
-}
-
-button {
-    padding: 12px;
-    border-radius: 8px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    text-align: center;
-}
-
-.btn-primary {
-    background-color: #3b4cca;
-    color: white;
-    border: none;
-}
-
-.btn-primary:hover {
-    background-color: #2a399f;
-}
-
-.btn-secondary {
-    background-color: transparent;
-    color: #2b1f75;
-    border: 2px solid #2b1f75;
-}
-
-.btn-secondary:hover {
-    background-color: rgba(43, 31, 117, 0.05);
-}
-
-.bottom-nav {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 65px;
-    background-color: #f8fafc;
-    border-top: 1px solid #e2e8f0;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    z-index: 100;
-}
-
-.nav-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-decoration: none;
-    color: #64748b;
-    font-size: 0.75rem;
-    gap: 4px;
-}
-
-.nav-item.active {
-    color: #3b4cca;
-}
-
-.nav-item .material-symbols-outlined {
-    font-size: 24px;
-}
-
-@media (min-width: 992px) {
-    
-    .navbar {
-        padding: 20px 8%;
-        border-bottom: 1px solid #f8f8f8;
-    }
-
-    .menu-icon {
-        display: none; 
-    }
-
-    .desktop-menu {
-        display: flex; 
-        gap: 30px;
-    }
-
-    .desktop-menu a {
-        text-decoration: none;
-        color: #4a5568;
-        font-weight: 500;
-        transition: color 0.2s;
-    }
-
-    .desktop-menu a:hover {
-        color: #3b4cca;
-    }
-
-  
-    .container {
-        padding: 40px 8%;
-        margin-bottom: 0; 
-        justify-content: center;
-        background: radial-gradient(circle at right, #e3edff 0%, #ffffff 60%);
-    }
-
-    .hero-content {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        max-width: 1200px;
-        width: 100%;
-        gap: 50px;
-    }
-
-    .text-side {
-        flex: 1;
-    }
-
-    .text-side h1 {
-        font-size: 3.5rem;
-    }
-
-    .text-side p {
-        font-size: 1.3rem;
-    }
-
-    .image-side {
-        flex: 1.2;
-        justify-content: flex-end;
-    }
-
-    .main-img {
-        max-width: 550px; 
-    }
-
-    .action-buttons {
-        flex-direction: row; 
-        max-width: none;
-        width: auto;
-        margin-top: 20px;
-        justify-content: flex-start;
-    }
-
-    button {
-        padding: 12px 35px;
-    }
-
-    .bottom-nav {
-        display: none;
-    }
-}
-
-    </style>
+    <title>Otto Acessórios</title>
+    <!-- Conectando o arquivo CSS -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 
-   
-    <header class="navbar">
-        <div class="menu-icon">
-            <span class="material-symbols-outlined">menu</span>
-        </div>
-        <div class="logo">
-           
-            <img src="imagens/otto.png" alt="Otto Acessórios Logo">
-        </div>
-      
-        <nav class="desktop-menu">
-            <a href="#">Início</a>
-            <a href="#">Categorias</a>
-            <a href="#">Carrinho</a>
-            <a href="#">Contato</a>
-        </nav>
-    </header>
-
-    <main class="container">
-        <section class="hero-content">
-            <div class="text-side">
-                <h1>Bem-vindo<br>ao Otto</h1>
-                <p>Acessórios de peças para carro</p>
+    <!-- CONTAINER PRINCIPAL DO SITE -->
+    <div class="site-wrapper">
+        
+        <!-- SEÇÃO SUPERIOR: HERO / BANNER PRINCIPAL -->
+        <header class="hero-section">
+            <!-- Lado Esquerdo: Imagem do Carro e Peças -->
+            <div class="hero-imagem">
+                <img src="imagens/banner-carro.png" alt="Carro azul com acessórios">
             </div>
-            
-            <div class="image-side">
-              
-                <img src="imagens/carro.png" alt="Carro Azul e Peças Automotivas" class="main-img">
+
+            <!-- Lado Direito: Textos, Botões e Logotipo -->
+            <div class="hero-conteudo">
+                <div class="topo-botoes">
+                    <button class="btn-ver-produtos" id="btnVerProdutos">ver produtos</button>
+                    
+                    <div class="icones-navegacao">
+                        <div class="icone-item">
+                            <span class="icone-grid">🌐</span>
+                            <span class="texto-icone">Categorias</span>
+                        </div>
+                        <div class="icone-item">
+                            <span class="icone-carrinho">🛒</span>
+                            <span class="texto-icone">Carrinho</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bloco-boas-vindas">
+                    <h1>Bem-vindo<br>ao Otto</h1>
+                    <p class="subtitulo">Acessórios de peças<br>para carro</p>
+                </div>
+
+                <div class="logo-container">
+                    <img src="imagens/logo-otto.png" alt="Otto Acessórios Logo" class="logo-img">
+                </div>
+            </div>
+        </header>
+
+        <!-- BARRA DE PESQUISA -->
+        <section class="barra-pesquisa-container">
+            <div class="campo-busca">
+                <input type="text" id="inputBusca" placeholder="Buscar produtos...">
+                <button class="btn-busca" id="btnBusca">🔍</button>
             </div>
         </section>
 
-        <section class="action-buttons">
-            <button class="btn-primary">ver produtos</button>
-            <button class="btn-secondary">saber mais</button>
-        </section>
-    </main>
+        <!-- GRADE DE CATEGORIAS DE PRODUTOS -->
+        <main class="categorias-container">
+            <div class="grid-categorias">
+                
+                <!-- Categoria 1 -->
+                <div class="card-categoria" data-categoria="engates">
+                    <div class="wrapper-img">
+                        <img src="imagens/engates.png" alt="Engates">
+                    </div>
+                    <p>Engates</p>
+                </div>
 
-    <footer class="bottom-nav">
-        <a href="#" class="nav-item active">
-            <span class="material-symbols-outlined">home</span>
-            <span>Início</span>
-        </a>
-        <a href="#" class="nav-item">
-            <span class="material-symbols-outlined">dashboard</span>
-            <span>Categorias</span>
-        </a>
-        <a href="#" class="nav-item">
-            <span class="material-symbols-outlined">shopping_cart</span>
-            <span>Carrinho</span>
-        </a>
-        <a href="#" class="nav-item">
-            <span class="material-symbols-outlined">chat</span>
-            <span>Contato</span>
-        </a>
-    </footer>
+                <!-- Categoria 2 -->
+                <div class="card-categoria" data-categoria="chicotes">
+                    <div class="wrapper-img">
+                        <img src="imagens/chicotes.png" alt="Chicotes eletrônicos">
+                    </div>
+                    <p>Chicotes eletronicos</p>
+                </div>
 
+                <!-- Categoria 3 -->
+                <div class="card-categoria" data-categoria="palhetas">
+                    <div class="wrapper-img">
+                        <img src="imagens/palhetas.png" alt="Palhetas">
+                    </div>
+                    <p>Palhetas</p>
+                </div>
+
+                <!-- Categoria 4 -->
+                <div class="card-categoria" data-categoria="lampadas">
+                    <div class="wrapper-img">
+                        <img src="imagens/lampadas.png" alt="Lâmpadas">
+                    </div>
+                    <p>Lampadas</p>
+                </div>
+
+                <!-- Categoria 5 -->
+                <div class="card-categoria" data-categoria="reles">
+                    <div class="wrapper-img">
+                        <img src="otto.png" alt="Relés DNI">
+                    </div>
+                    <p>Reles DNI</p>
+                </div>
+
+                <!-- Categoria 6 -->
+                <div class="card-categoria" data-categoria="capotas">
+                    <div class="wrapper-img">
+                        <img src="otto.png" alt="otto Acessórios Capotas Marítimas">
+                    </div>
+                    <p>Capotas maritimas</p>
+                </div>
+
+            </div>
+        </main>
+
+    </div>
+
+    <!-- Conectando o arquivo JavaScript -->
+    <script src="js/script.js"></script>
 </body>
 </html>
