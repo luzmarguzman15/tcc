@@ -167,5 +167,25 @@ footer {
     color: #8892b0;
     font-size: 0.9rem;
 }
+/* Container que junta a imagem do carro e o texto de boas-vindas */
+.hero-banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff; /* Fundo branco do banner */
+    padding: 40px 60px;
+    gap: 30px;
+}
 
+/* Estilização específica para a imagem do carro azul */
+.car-image {
+    max-width: 25%; /* Limita a imagem para ocupar metade da largura do banner */
+    height: auto;    /* Mantém a proporção correta da imagem, sem distorcer */
+    object-fit: contain;
+}
 
+/* Container do texto do lado direito */
+.hero-content {
+    flex: 1;
+    text-align: left;
+}
