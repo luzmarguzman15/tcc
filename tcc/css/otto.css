@@ -1,0 +1,191 @@
+/* Reset básico de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Fundo azul principal do site */
+body {
+    background-color: #0a192f; /* Azul escuro elegante */
+    color: #e6f1ff; /* Texto claro para contraste */
+}
+
+/* Barra de Navegação */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: #172a45; /* Azul intermediário */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.logo h2 {
+    color: #64ffda; /* Azul esverdeado para destaque */
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #cbd5e1;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #64ffda;
+}
+
+/* Banner Principal (Hero) */
+.hero-section {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(135deg, #0a192f 0%, #112240 100%);
+    padding: 0 20px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #8892b0;
+}
+
+.btn-primary {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #64ffda;
+    color: #0a192f;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    background-color: #52e0c4;
+}
+
+/* Seção de Produtos */
+.products-section {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.products-section h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #ffffff;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+/* Cards de Produtos */
+.product-card {
+    background-color: #112240; /* Card azul escuro */
+    border-radius: 8px;
+    padding: 20px;
+    transition: transform 0.3s;
+    border: 1px solid #233554;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+.product-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #e6f1ff;
+}
+
+.product-card p {
+    color: #64ffda;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.btn-buy {
+    width: 100%;
+    padding: 10px;
+    background-color: transparent;
+    color: #64ffda;
+    border: 1px solid #64ffda;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-buy:hover {
+    background-color: #64ffda;
+    color: #0a192f;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 30px;
+    background-color: #071224;
+    color: #8892b0;
+    font-size: 0.9rem;
+}
+/* Container que junta a imagem do carro e o texto de boas-vindas */
+.hero-banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff; /* Fundo branco do banner */
+    padding: 40px 60px;
+    gap: 30px;
+}
+
+/* Estilização específica para a imagem do carro azul */
+.car-image {
+    max-width: 25%; /* Limita a imagem para ocupar metade da largura do banner */
+    height: auto;    /* Mantém a proporção correta da imagem, sem distorcer */
+    object-fit: contain;
+}
+
+/* Container do texto do lado direito */
+.hero-content {
+    flex: 1;
+    text-align: left;
+}
