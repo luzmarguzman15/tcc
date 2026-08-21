@@ -1,4 +1,4 @@
-/* Reset básico de estilos */
+
 * {
     margin: 0;
     padding: 0;
@@ -10,19 +10,18 @@ html {
     scroll-behavior: smooth;
 }
 
-/* Fundo azul principal do site */
 body {
-    background-color: #0a192f; /* Azul escuro elegante */
-    color: #e6f1ff; /* Texto claro para contraste */
+    background-color: #0a192f; 
+    color: #e6f1ff; 
 }
 
-/* Barra de Navegação */
+
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 10%;
-    background-color: #172a45; /* Azul intermediário */
+    background-color: #172a45; 
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -110,7 +109,6 @@ body {
     gap: 30px;
 }
 
-/* Cards de Produtos */
 .product-card {
     background-color: #112240; 
     border-radius: 8px;
@@ -189,7 +187,7 @@ footer {
     text-align: left;
 }
 .rodape-contato {
-  background: #6ab2e7; 
+  background: #187bc2; 
   color: #0a1a2f;
   display: flex;
   justify-content: space-between;
