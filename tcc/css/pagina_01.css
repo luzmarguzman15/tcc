@@ -1,0 +1,261 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.logo-text {
+    font-size: 28px;
+    font-weight: bold;
+    color: #0b1c3f;
+    text-transform: lowercase;
+}
+
+.logo-text small {
+    font-size: 14px;
+    display: block;
+    text-align: right;
+    margin-top: -5px;
+    color: #555;
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.btn-products {
+    background-color: #4a3aff;
+    color: white;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn-products:hover {
+    background-color: #3525cc;
+}
+
+.nav-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.icon-item {
+    text-align: center;
+    cursor: pointer;
+    font-size: 12px;
+    color: #666;
+}
+
+.icon-item span {
+    font-size: 20px;
+}
+
+.hero-section {
+    display: flex;
+    align-items: center;
+    padding: 40px 5%;
+    background: radial-gradient(circle at left, #f5f8ff 0%, #ffffff 70%);
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-image img {
+    max-width: 90%;
+    height: auto;
+    object-fit: contain;
+}
+
+.hero-content {
+    flex: 1;
+    padding-left: 40px;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    color: #4834d4;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    font-size: 22px;
+    color: #444;
+    margin-bottom: 30px;
+}
+
+.brand-badge {
+    border: 3px solid #2f00ff;
+    padding: 10px 25px;
+    display: inline-block;
+    border-radius: 50px;
+    text-align: center;
+}
+.btn-boy {
+    font-size: 32px;
+    color: #231eb5;
+    font-weight: 400;
+    letter-spacing: 2px;
+    display: block;
+    line-height: 1;
+}
+
+.brand-badge .badge-title {
+       font-size: 32px;
+    color: #231eb5;
+    font-weight: 400;
+    letter-spacing: 2px;
+    display: block;
+    line-height: 1;
+}
+
+.brand-badge .badge-sub {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+
+.search-section {
+    padding: 20px 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.search-container {
+    display: flex;
+    width: 100%;
+    max-width: 800px;
+    background-color: #eae7f8;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #d1ccec;
+}
+
+#searchInput {
+    flex: 1;
+    border: none;
+    background: transparent;
+    padding: 15px 20px;
+    font-size: 16px;
+    outline: none;
+}
+
+.search-btn {
+    background: transparent;
+    border: none;
+    padding: 0 20px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 20px;
+    padding: 40px 5%;
+}
+
+.category-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.category-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.card-img {
+    font-size: 70px;
+    margin-bottom: 30px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+}
+
+.category-card p {
+    font-size: 14px;
+    font-weight: 500;
+    color: #231eb5;
+}
+
+.btn-otto-custom {
+    background-color: #ffffff;
+    border: 2px solid #0076ff;
+    border-radius: 8px;       
+    
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 24px;
+    
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0, 118, 255, 0.1);
+  }
+  
+  
+  .badge-title {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #1a1a1a; 
+    letter-spacing: 1px;
+  }
+  
+  
+  .badge-sub {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+    text-transform: lowercase;
+    color: #555555; 
+    margin-top: 2px;
+  }
+  
+
+  .btn-otto-custom:hover {
+    background-color: #f0f7ff;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 118, 255, 0.15);
+  }
+  
+
+  .btn-otto-custom:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 118, 255, 0.1);
+  }
+  
