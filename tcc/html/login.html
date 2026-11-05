@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Meu Site</title>
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+
+<body>
+
+    <main class="container-auth">
+
+        <div id="container-usuario" style="margin-bottom: 20px; display: flex; justify-content: center;"></div>
+
+        <div class="card-auth" id="caixa-login">
+            <h2>Otto Acessórios</h2>
+            <p>Acesse sua conta ou cadastre-se para aproveitar ofertas exclusivas.</p>
+
+            <form id="form-cadastro" class="form-auth">
+                <div class="campo-form">
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" placeholder="Digite seu nome">
+                </div>
+
+                <div class="campo-form">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" placeholder="seuemail@exemplo.com" required>
+                </div>
+
+                <div class="campo-form">
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" placeholder="Sua senha" required>
+                </div>
+
+                <button type="submit" class="btn-submit">ENTRAR</button>
+            </form>
+
+            <div class="divisor-auth" style="margin: 20px 0; text-align: center; color: #666;">ou</div>
+            <button class="btn-google" id="btn-google">
+                <img src="..\img\google.png" alt="Google Logo" style="width: 20px;">
+                Entrar com o Google
+            </button>
+        </div>
+    </main>
+
+    <script type="module" src="../js/login.js"></script>
+</body>
+
+</html>

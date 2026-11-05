@@ -41,7 +41,7 @@ body {
     gap: 30px;
 }
 
-.btn-products {
+.btn-products, .botao-login-antigo {
     background-color: #4a3aff;
     color: white;
     border: none;
@@ -52,7 +52,7 @@ body {
     transition: background 0.2s;
 }
 
-.btn-products:hover {
+.btn-products:hover , .botao-login-antigo:hover{
     background-color: #3525cc;
 }
 
