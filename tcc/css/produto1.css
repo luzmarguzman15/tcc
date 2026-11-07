@@ -1,0 +1,40 @@
+* { margin:0; padding:0; box-sizing:border-box; font-family: Arial, sans-serif; }
+body { background:#ffffff; }
+
+header { 
+  display:flex; 
+  justify-content:space-between; 
+  padding:12px 20px; 
+  background:#ffffff; 
+  color:#fff;
+}
+.left { display:flex; gap:10px; align-items:center; }
+.left button { background:none; border:none; font-size:20px; color:#000000; cursor:pointer; }
+.logo { font-weight:900; font-style:italic; font-size:20px; line-height:9px; color:#000000; }
+.logo span { display:block; font-size:7px; font-weight:400; letter-spacing:3px; border-top:1px solid #000000; margin-top:3px; }
+.right { display:flex; gap:12px; align-items:center; }
+.btn-azul { background:#fff; color:#1a4dff; border:none; padding:7px 14px; border-radius:20px; font-size:12px; font-weight:700; cursor:pointer; }
+
+.busca { width:95%; margin:12px auto; display:flex; border:none; padding:10px 14px; border-radius:10px; max-width:1200px; background:#fff; box-shadow:0 2px 8px rgba(26,77,255,0.1); }
+.busca input { flex:1; border:none; outline:none; }
+
+main { max-width:1200px; margin:20px auto; display:grid; grid-template-columns:1.2fr 0.8fr; gap:20px; padding:0 20px; }
+.fotos { border:none; padding:25px; display:flex; flex-direction:column; align-items:center; gap:20px; background:#fff; border-radius:12px; box-shadow:0 2px 10px rgba(0,0,0,0.05); }
+.fotos .engate { width:320px; }
+.fotos .carro { width:190px; }
+
+.info { background:#fff; padding:20px; border-radius:12px; box-shadow:0 2px 10px rgba(0,0,0,0.05); }
+.info h1 { font-size:13px; font-weight:700; line-height:16px; margin-bottom:10px; color:#0a1f66; }
+.preco { font-size:22px; font-weight:800; margin-bottom:3px; color:#1a4dff; }
+.info p { font-size:13px; color:#333; }
+.estoque { color:#cc0000 !important; font-weight:700; margin-top:6px; }
+
+.qtd { display:flex; gap:12px; align-items:center; margin:15px 0; }
+.qtd button { width:30px; height:30px; border:1px solid #1a4dff; background:#eef3ff; color:#1a4dff; cursor:pointer; border-radius:6px; font-weight:800; }
+#qtd { font-weight:800; color:#1a4dff; }
+
+.btn-comprar { width:100%; background:#1a4dff; color:#fff; border:none; padding:14px; border-radius:8px; font-weight:800; cursor:pointer; font-size:14px; }
+.btn-comprar:disabled { background:#b3c3ff; cursor:not-allowed; }
+.btn-comprar:hover:not(:disabled) { background:#0f3cd6; }
+
+@media(max-width:700px){ main{ grid-template-columns:1fr; } }

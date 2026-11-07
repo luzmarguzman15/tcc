@@ -21,14 +21,14 @@ body {
 }
 
 .logo-text {
-    font-size: 28px;
-    font-weight: bold;
+    font-size: 20px;
+    font-style:italic;
     color: #0b1c3f;
     text-transform: lowercase;
 }
 
 .logo-text small {
-    font-size: 14px;
+    font-size: 22px;
     display: block;
     text-align: right;
     margin-top: -5px;
@@ -41,7 +41,7 @@ body {
     gap: 30px;
 }
 
-.btn-products {
+.btn-products, .botao-login-antigo {
     background-color: #4a3aff;
     color: white;
     border: none;
@@ -52,7 +52,7 @@ body {
     transition: background 0.2s;
 }
 
-.btn-products:hover {
+.btn-products:hover , .botao-login-antigo:hover{
     background-color: #3525cc;
 }
 
