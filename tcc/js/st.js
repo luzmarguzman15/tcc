@@ -38,7 +38,22 @@ document.addEventListener('DOMContentLoaded', () => {
         alert('Redirecionando para a seção de todos os produtos!');
     });
 });
+document.addEventListener('DOMContentLoaded', () => {
+    const containerUsuario = document.getElementById('container-usuario');
+    const usuarioValido = localStorage.getItem('usuarioLogado');
 
+    if (usuarioValido && containerUsuario) {
+        const usuario = JSON.parse(usuarioValido);
+        
+        containerUsuario.innerHTML = `
+            <div class="perfil-header" style="display: flex; align-items: center; gap: 10px; cursor: pointer;">
+                <img id="foto-perfil-logout" src="${usuario.foto}" alt="Foto de ${usuario.nome}" style="width: 40px; height: 40px; border-radius: 50%; border: 2px solid #ef3e36; object-fit: cover;">
+            </div>
+        `;
+
+        document.getElementById('foto-perfil-logout').addEventListener('click', toggleMenuUsuario);
+    }
+});
 const botaoOtto = document.getElementById('btn-otto');
 
 botaoOtto.addEventListener('click', () => {
