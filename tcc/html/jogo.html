@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roleta de Descontos</title>
+    <link rel="stylesheet" href="/tcc/css/jogo.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Gire e Ganhe Descontos!</h1>
+        
+        <div class="roleta-wrapper">
+            <div class="ponteiro"></div>
+            <div class="roleta" id="roleta">
+                <div class="fatia" style="--i:0;"><span>50%</span></div>
+                <div class="fatia" style="--i:1;"><span>25%</span></div>
+                <div class="fatia" style="--i:2;"><span>10%</span></div>
+                <div class="fatia" style="--i:3;"><span>2%</span></div>
+                <div class="fatia" style="--i:4;"><span>25%</span></div>
+                <div class="fatia" style="--i:5;"><span>10%</span></div>
+                <div class="fatia" style="--i:6;"><span>2%</span></div>
+                <div class="fatia" style="--i:7;"><span>10%</span></div>
+                
+                <div class="miolo"></div>
+            </div>
+        </div>
+
+        <button id="btn-girar">Girar Roleta</button>
+        <p id="resultado"></p>
+    </div>
+
+    <script src="/tcc/js/jogo.js"></script>
+</body>
+</html>
